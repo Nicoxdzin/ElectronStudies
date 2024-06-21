@@ -1,12 +1,15 @@
 import Versions from './components/Versions'
+import HelloWorld from './components/HelloWorld'
 
 function App() {
-  // const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 
   return (
     <>
-      <h1>Hello World</h1>
-      {/* <Versions></Versions> */}
+      <HashRouter basename="/app">
+        <Routes>
+          <Route path="/HelloWorld" exact component={ HelloWorld } /> {/* 👈 Renders at /#/app/ */}
+        </Routes>
+      </HashRouter>
     </>
   )
 }
