@@ -1,16 +1,10 @@
 import Versions from './components/Versions'
-import HelloWorld from './components/HelloWorld'
+import Login from './components/Login'
 
 function App() {
 
   return (
-    <>
-      <HashRouter basename="/app">
-        <Routes>
-          <Route path="/HelloWorld" exact component={ HelloWorld } /> {/* 👈 Renders at /#/app/ */}
-        </Routes>
-      </HashRouter>
-    </>
+    <Login/>
   )
 }
 
